@@ -1,5 +1,6 @@
 const codigo = document.getElementById('codigo');
 const nombre = document.getElementById('nombre');
+const button = document.getElementById('button__home');
 
 let user = JSON.parse(localStorage.getItem('user'));
 codigo.innerText += ' ' + user.codigo
@@ -66,3 +67,7 @@ fetch(url , {
         });
     })
 });
+
+button__home.addEventListener('click', ()=>{
+    window.location.href = 'index.html';
+})
