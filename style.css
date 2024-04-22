@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 25%;
+    height: 25%;
+}
+
+.img__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20vh auto;
+}
+
+.container__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto 0;
+}
+
+.container__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+.container__password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    padding-bottom: 10px;
+}
+
+.container__button{
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: #D31024 ;
+    color: white;
+    font-size: 16px;
+    border-bottom-left-radius: 20px;
+    height: 32px;
+    width: 215px;
+    border: 1px solid black;
+}
+
+.container__title{
+    font-size: 14px;
+}
+
+
+.container__contraseña__input{
+    height: 16px;
+    width: 16px;
+}

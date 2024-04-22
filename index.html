@@ -3,11 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="img__logo">
+        <img src="img/logo-horizontal.jpg">
+    </div>
+    <div class="container">
+        <div class="container__form">
+            <form class="container__input">
+                <p class="container__title">Código de Estudiante</p>
+                <input  id="codeStudent" class="container__codigo__input" type="text">
+            </form>
+            <form class="container__password">
+                <p class="container__title">Password</p>
+                <input id="passwordStudent"  class="container__codigo__input" type="password">
+            </form>
+            <button id="button" class="container__button">Ingresar</button>
+        </div>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
