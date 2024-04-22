@@ -19,14 +19,16 @@ button.addEventListener('click', () =>{
 })
 .then(response => {
     if (response.ok) {
-        window.location.href = 'notas.html'
-        return response.json();
+        return response.json(); 
     } else {
-        alert('Error en la solicitud');
+        throw new Error('Error en la solicitud'); 
     }
 })
 .then(data => {
     alert(data.mensaje); 
+    localStorage.setItem('user', JSON.stringify(data)); 
+    
+    window.location.href = 'notas.html';
 })
 .catch(error => {
     console.error('Error:', error);
