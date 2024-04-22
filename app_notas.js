@@ -69,5 +69,6 @@ fetch(url , {
 });
 
 button__home.addEventListener('click', ()=>{
+    localStorage.setItem('user', "");
     window.location.href = 'index.html';
 })
